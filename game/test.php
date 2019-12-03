@@ -17,7 +17,7 @@ header("location:index.php");
 
 $host="lamber.se.mysql"; // Host name 
 $username="lamber_se"; // Mysql username 
-$password="goknul93"; // Mysql password 
+$password="text"; // Mysql password 
 $db_name="lamber_se"; // Database name 
 $tbl_name="login"; // Table name 
 

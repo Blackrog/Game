@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>
+Marcus Awesome Adventure
+</title>
+<link rel=stylesheet href="index.css" type="text/css"> <!-- lankar till css -->
+<link href="img/ridium.jpg" rel="shortcut icon" type="image/x-icon"> <!-- Lankar till icnonen som visas vid fliken -->
+<meta charset="utf-8">
+<body>
+
+<div id="experiment"> <!-- backgrounden som ror pa sig -->
+    <div id="background"></div> <!-- Bilden som ror pa sig -->
+    
+</div>
+
+<div class="ruta"> <!-- rutan som innehallar allt -->
+
+<div class="divbanner"> <!-- Banner bilds rutan -->
+
+<div id="cf"> <!-- bilderna som byter plats nar man hovrar over dom ligger inuti banner bild rutan -->
+<img class="bottom" src="img/bild2.jpg" alt=""/>
+<img class="top" src="img/island.jpg" alt=""/>
+</div>
+
+</div>
+
+<div class="register"> <!-- rutan uppe till hoger som visra Register -->
+<h1>Register</h1>
+</div>
+
+<div class="divmitt"> <!-- Rutan i mitten som innehaller register innehallet -->
+<img src="img/background.jpg" alt=""/>
+<table class="texttable">
+
+<tr><td class=tdtext>
+
+<form name="login" method="post" action="index.php"> <!-- formen for registreringen vilken slags typ det ar -->
+	<br>
+	<b>Choose username: <input type="text" name="username" size=20 maxlength="65" class="optionfalt"></b><br><br>
+	<b>Choose password: <input type="password" name="password" size=20 maxlength="65" class="optionfalt"></b>
+	<br>    
+</form>
+	<form action="http://lamber.se/game/"><!-- istallet for att spara i min databas (lyckades inte fixa) sa skickar den till startsidan -->
+        <input type="submit" value="Register" style="margin-top:10px;" class="optionreg">
+    </form>
+</td></tr>
+
+</table>
+</div>
+
+<div class="divbotten"> <!-- rutan langst ner som visar min email och ar en footer -->
+<footer><h1>Email: Marcus (at) lamber.se</h1></footer>
+</div>
+</div>
+
+<ul id="menu"> <!-- menyn langst upp till vanster -->
+    <li>
+        <a>Menu</a>
+        <ul>
+            <li><a href="http://lamber.se/game/index.php">The Game</a></li>
+            <li><a href="http://lamber.se/game/register.html">Register</a></li>
+            <li><a href="http://lamber.se/game/email.html">Email me</a></li>
+            <li><a href="http://lamber.se/game/video.html">Video</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+
+
+</body>
+</html>

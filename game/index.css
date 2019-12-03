@@ -1,0 +1,370 @@
+
+.ruta {
+ position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -375px;
+    margin-left: -440px; 
+}
+
+
+.texttable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+b {
+    margin-left: 40px;
+}
+
+.divbanner {
+height:140px; 
+width:620px; 
+float:left; 
+background: #1f1f1f; 
+border:5px double white;}
+
+.divbanner img{float:left; height:130px; width:610px; padding:5px;}
+
+.divusername {height:140px; width:250px; background: #1f1f1f; color:white; border:5px double white; 
+overflow:hidden; margin-right:1000px;}
+
+.divusername p {padding:5px;}
+
+.divmitt {height:500px; width:880px; overflow:hidden; float:left; background:black; color:green; border:5px double white;
+margin-right:1000px;}
+
+.divmitt img{height:500px; width:1020px; float:left;}
+
+.divbotten {height:75px; width:880px; float:left; background: #1f1f1f; color:green; border:5px double white; 
+}
+.divbotten h1 {padding:6px; color:white;}
+
+table {background:black; color:white; overflow:hidden; position:relative; top:-450px;}
+.tdtext {width:400px; height:300px; border:2px solid white; overflow:auto;}
+
+.knappar {text-align:center;}
+
+
+.register {
+    height:140px; 
+    width:250px; 
+    background: #1f1f1f; 
+    color:white; 
+    border:5px double white; 
+    overflow:hidden; 
+    margin-right:1000px;
+    text-align: center;
+    display: table-cell;
+    vertical-align:middle;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.menu2 {
+    position:fixed;
+    top: 10px;
+    color: white;
+    padding: 3px;
+    background: #1f1f1f; 
+    border:5px double white;
+    width: 125px;
+    height: 120px;
+}
+
+.option {
+  color: white;
+  background: black;
+  font-weight: bold;
+  height: 30px;
+  width: 100%;
+  border: 2px solid white;
+}
+ 
+.option:hover {
+  color: white;
+  background: grey;
+}
+
+.optionav {
+  color: red;
+  background: black;
+  font-weight: bold;
+  height: 30px;
+  width: 100%;
+  border: 2px solid white;
+}
+ 
+
+.optionin {
+    position: relative;
+    margin-left: 50%;
+    left: -97px;
+    top: -3px;
+  color: white;
+  background: black;
+  font-weight: bold;
+  width: 80%;
+  height: 20px;
+  border: 2px solid white;
+}
+ 
+.optionin:hover {
+  color: white;
+  background: grey;
+}
+
+.bemail {
+    font-size: 20px;
+}
+
+.binfo {
+    position: relative;
+    left: -25px;
+    font-size: 15px;
+    
+}
+
+.optionreg {
+    position: relative;
+    left: 150px;
+    top: 30px;
+  color: white;
+  background: black;
+  font-weight: bold;
+  width: 120px;
+  height: 40px;
+  border: 2px solid white;
+}
+ 
+.optionreg:hover {
+  color: white;
+  background: grey;
+}
+
+.optionin2 {
+    position: relative;
+    top: -15px;
+    left: -30px;
+  color: white;
+  background: black;
+  font-weight: bold;
+  width: 80px;
+  height: 30px;
+  border: 2px solid white;
+  margin-left: 100px;
+}
+ 
+.optionin2:hover {
+  color: white;
+  background: grey;
+}
+
+
+.optionfalt {
+    position: relative;
+  color: white;
+  background: black;
+  font-weight: bold;
+  height: 20px;
+  border: 2px solid white;
+  left: 12px;
+}
+
+.optionfalttext {
+    position: relative;
+    left: 12px;
+  color: white;
+  background: #242424;
+  font-weight: bold;
+  height: 80px;
+  border: 2px solid white;
+  margin-bottom: 20px;
+}
+
+.a {
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+.a:hover {
+    font-size: 20px;
+}
+
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+
+
+
+#background {
+    background: url('img/foreground.png') 5% 5%, url('img/midground.png') 50% 50%, url('img/background.png') 90% 110%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    transition: left 300s linear;
+}
+
+#experiment:target #background {
+    left: -5000px;
+}
+
+#experiment:hover #background {
+    left: -9999px;
+}
+
+
+#menu {
+    position: fixed;
+    top: 10px;
+    width: 90px;
+    margin: 0;
+    padding: 0 0 0 0;
+    list-style: none;  
+    background-color: #111;
+    background-image: linear-gradient(#444, #111);
+    box-shadow: 0 2px 1px #9c9c9c;
+    border: solid;
+    border-color: #FFFFFF;
+}
+
+#menu li {
+    float: left;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    padding: 0 25px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a {
+    color: #FFFFFF;
+}
+
+#menu li a:hover {
+    color: #FFFFFF;
+}
+
+#menu li:hover > ul {
+    display: block;
+}
+
+/* Dropdown */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 99999;    
+    background-image: linear-gradient(#444, #111);
+    border: 2px solid white;
+}
+
+#menu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    box-shadow: 0 1px 0 #111111, 
+                0 2px 0 #777777;
+}
+
+#menu ul li:last-child { 
+    box-shadow: none;    
+}
+
+#menu ul a {    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#menu ul a { /* Menu will be wider if this (*html) is removed */  
+    height: 10px;
+    width: 60px;
+}
+
+*:first-child+html #menu ul a { /* IE7 */    
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover {
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+
+#menu ul li:first-child a {
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+#menu ul li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+
+#menu:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+
+
+

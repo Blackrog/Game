@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>
+Marcus Awesome Adventure
+</title>
+<link rel=stylesheet href="index.css" type="text/css"> <!-- lankar till css -->
+<meta charset="utf-8"> <!-- bestammer verisonen/texttyp av dokumentet (kan inte skriva svenska bokstavar) -->
+
+<link href="img/ridium.jpg" rel="shortcut icon" type="image/x-icon"> <!-- Iconen som visas pa flikarna -->
+<body>
+
+<div id="experiment"> <!-- background bilderna som ror pa sig om man haller over dom -->
+    <div id="background" data-alt=""></div>
+</div>
+
+<div class="ruta"> <!-- Det ar hela rutan omkring de andra rutorna -->
+
+<div class="divbanner"> <!-- Banner bilds rutan -->
+
+<div id="cf"> <!-- Bilderna i rutan (behovde gora en till div for animatonen) -->
+<img class="bottom" src="img/bild2.jpg" alt=""/>
+<img class="top" src="img/island.jpg" alt=""/>
+</div>
+
+</div>
+
+<div class="divusername"> <!-- Har skriver du in anvandar namn och losen for att logga in (Lyckades inte fixa det) -->
+
+
+
+<form name="login" method="post" action="index.php">
+	<br>
+	Username:<input type="text" name="username" size=20 maxlength="65" class="optionfalt"><br><br>
+	Password: <input type="password" name="password" size=20 maxlength="65" class="optionfalt">
+
+	
+	<input type="submit" name="Submit" value="Login" style="margin-top:10px" class="optionin">
+    
+
+	</form>;
+
+
+
+    <form action="http://lamber.se/game/register.html"> <!-- Register knappen, addresen den skickar dig till -->
+        <input type="submit" value="Register" style="margin-top:1px" class="optionin">
+    </form>
+   
+    
+</div>
+
+<div class="divmitt">
+<img src="img/background.jpg" alt=""/>
+<table class="texttable">
+<tr><td class=tdtext colspan=3>
+
+  
+  
+  </td></tr>
+<tr> <td class="knappar">
+	<form action="index.php" method="post">
+		<input type="hidden" name="id" value="<?php echo $option1; ?>"> <!-- skriv ut knappen med vardet fran kolumnen option 1 fran Mysql databasen. -->
+		<input type="submit" value="Option 1" class="option">
+    </form></td>	
+
+		<td class="knappar"><?php if ($option2==0) // Om option 2 inte har nagot varde, avaktivera knappen. Om den har ett varde sa far den vardet fran kolumnen option 2.
+						{ 
+	<input type="submit" disabled value="Option 2" class="optionav">;
+						<form action="index.php" method="post">;
+						<input type="hidden" name="id">;
+						<input type="submit" value="Option 2" class="option">;
+						}
+					?>
+		</form></td>
+		
+		<td class="knappar"><?php if ($option3==0) // Om option 3 inte har nagot varde, avaktivera knappen. Om den har ett varde sa far den vardet fran kolumnen option 3.
+						{ 
+						echo '<input type="submit" disabled value="Option 3" class="optionav">';
+						}
+						else
+						{
+						echo '<form action="index.php" method="post">';
+						echo '<input type="hidden" name="id" value="'.$option3.'">';
+						echo '<input type="submit" value="Option 3" class="option">';
+						}
+						
+//		<input type="submit" value="Option 3">;' } 
+?>
+</form></td></tr>
+
+		
+</table>
+</div>
+
+<div class="divbotten"> <!-- Rutan langst ner som skriver ut Email addresen -->
+<footer><h1>Email: Marcus (at) lamber.se</h1></footer>
+    
+</div>
+</div>
+
+<ul id="menu">
+    <li>
+        <a>Menu</a>
+        <ul>
+            <li><a href="http://lamber.se/game/index.php">The Game</a></li>
+            <li><a href="http://lamber.se/game/register.html">Register</a></li>
+            <li><a href="http://lamber.se/game/email.html">Email me</a></li>
+            <li><a href="http://lamber.se/game/video.html">Video</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+</body>
+</html>

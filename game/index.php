@@ -15,7 +15,7 @@ header("location:index.php");
 
 $host="lamber.se.mysql"; // Host name 
 $username="lamber_se"; // Mysql username 
-$password="goknul93"; // Mysql password 
+$password="text"; // Mysql password 
 $db_name="lamber_se"; // Database name 
 $tbl_name="login"; // Table name 
 
@@ -58,7 +58,7 @@ $vadfanduvill=0;
 <?php
 
 $nisse=Marcus; // inge markvardigt
-$balle=Lämber;
+$balle=LÃ¤mber;
 
  
  if (isset($_POST['username'])) // Kollar om man ar inloggad (fungerar inte)
